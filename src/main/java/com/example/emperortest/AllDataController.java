@@ -15,7 +15,7 @@ public class AllDataController {
     AllDataService allDataService;
 
     @GetMapping("/")
-    public Map<Home,BillDetails> allData(){
+    public Map<Home, List<BillDetails>> allData(){
         return allDataService.allData();
     }
 }
